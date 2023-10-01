@@ -1,0 +1,68 @@
+<!doctype html>  <!-- Document type declaration for HTML5 -->
+<html lang="en">  <!-- Start of the HTML document with English language specification -->
+
+<head>  <!-- Head section -->
+    <meta charset="UTF-8">  <!-- Specifies the character encoding for the document as UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Ensures the site is optimized for mobile devices and scales properly -->
+    <title> Projects </title>  <!-- The title that appears in the browser tab -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">  <!-- Imports the Poppins font from Google Fonts with various weights -->
+    <link href="full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">  <!-- Links to CSS for screens wider than 960px -->
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959px)">  <!-- Links to CSS for tablet-sized screens -->
+    <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">  <!-- Links to CSS for phone-sized screens -->
+</head>  <!-- End of the head section -->
+
+<body class="projects">  <!-- Start of the body section with a class named "projects" -->
+    <div id="projects-wrapper">  <!-- A wrapper div for the projects page content -->
+        <nav id="projects-nav">  <!-- Navigation bar for the projects page -->
+            <ul>  <!-- Unordered list for navigation links -->
+                <!-- Individual list items with links to different sections of the website -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <main id="projects-content">  <!-- Main content area for the projects page -->
+
+            <section class="project-section">  <!-- A section for the first project -->
+                <h3>Project 1: Python Cryptography Project</h3>  <!-- Heading for the project -->
+                <p class="project-usage">  <!-- Description of the project -->
+                    Users can input their messages, choose an encryption method, and observe the 
+                    transformation of their messages through different cryptographic techniques. 
+                    This project serves as a practical learning resource for cryptography enthusiasts 
+                    and those interested in secure communication methods.
+                </p>
+                <a href="https://github.com/omiedmuhebi/Encryption-Project.git" target="_blank" class="github-link">View code on GitHub</a>  <!-- Link to view the project code on GitHub -->
+            </section>
+
+            <section class="project-section">  <!-- A section for the second project -->
+                <h3>Project 2: Python Hangman Game</h3>  <!-- Heading for the project -->
+                <p class="project-description">  <!-- Description of the project -->
+                This Python project is a text-based version of the classic game "Hangman." 
+                It welcomes the player and provides them with ten chances to guess a hidden word. 
+                The player inputs guesses, with incorrect ones deducting from their turns. 
+                The game ends with either a victory message for a successful guess or defeat when 
+                turns run out. It's a fun way to engage with fundamental programming concepts while 
+                enjoying the challenge of word guessing.
+                </p>
+                <a href="https://github.com/omiedmuhebi/Hangman.git" target="_blank" class="github-link">View code on GitHub</a>  <!-- Link to view the project code on GitHub -->
+            </section>
+
+        </main>  <!-- End of the main content area -->
+
+        <footer id="projects-footer">  <!-- Footer section of the projects page -->
+            <h5>&#169; 2023 omied Muhebi <br> All Rights Reserved</h5>  <!-- Copyright notice -->
+            <address class="footer-address">  <!-- Address section for contact details -->
+                <!-- Contact email address for to me -->
+                <p class="footer-email">Contact me at <a href="omied.muhebi@ontariotechu.net">omied.muhebi@ontariotechu.net</a></p>
+            </address>
+        </footer>
+
+    </div>  <!-- End of the projects-wrapper div -->
+
+</body>  <!-- End of the body section -->
+
+</html>  <!-- End of the HTML document -->

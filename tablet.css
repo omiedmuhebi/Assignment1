@@ -1,0 +1,462 @@
+ /* Global Styles */
+
+  /* Applying a default font for all elements */
+  * {
+      font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Setting up flexbox layout for the entire body */
+  body {
+      display: flex; /* Using flexbox for layout */
+      flex-direction: column; /* Stack children elements vertically */
+      min-height: 100vh; /* Ensure body occupies the full height of the viewport */
+  }
+  
+  /* Styling for the main content wrapper */
+  #wrapper {
+      flex: 1; /* Ensure content wrapper occupies all available space, useful for making footers sticky */
+  }
+  
+  /* Media query */
+  @media only screen and (max-width: 959px) {  /* Targeting screens with a maximum width of 959 pixels */
+    
+      /* Start of CSS for home page */
+
+      /* Defining background and default styles for the home page */
+      .home{
+          background-image: linear-gradient(to right, #000428, #004e92); /* Applying a linear gradient background */
+          font-family: 'Poppins', sans-serif; /* Setting the font for elements within .home */
+          color: white; /* Setting the default text color to white */
+      }
+    
+      /* Styling the navigation bar for the home page that's inside the wrapper */
+      .home #wrapper .navbar-for-home-page {
+          font-size: 18px; /* Adjusting font size */
+          padding: 10px 0; /* Top and bottom padding */
+          text-align: center; /* Center-aligning the text */
+      }
+    
+      /* Styling the anchor elements inside the home wrapper */
+      .home #wrapper a {
+          text-decoration: none; /* Removing the default underlines of links */
+          padding: 6px 12px; /* Setting padding around the text */
+          font-size: 3.5vw; /* Scaling font size based on viewport width */
+          display: inline-block; /* Display as block elements, but inline with other elements */
+          margin: 0 1vw; /* Setting horizontal margins, scaling with viewport width */
+          background-color: black; /* Setting the button background color */
+          color: white; /* Setting the button text color */
+          border-radius: 4px; /* Applying rounded corners */
+          transition: 0.3s; /* Smooth transition for hover effects */
+      }
+    
+      /* Styling the greeting section inside the home wrapper */
+      .home #wrapper .greeting-home {
+          font-size: 7.5vw; /* Scaling font size based on viewport width */
+      }
+    
+      /* Styling the footer inside the home page */
+      .home #footer-homepage {
+          font-size: 3vw; /* Adjusting the font size based on viewport width */
+          width: 100%; /* Setting the footer width to span the entire width */
+          min-height: 15vh; /* Ensuring the footer has a minimum height */
+          text-align: center; /* Center-aligning the text */
+          background-color: black; /* Setting the footer background color */
+          border-radius: 4px; /* Applying rounded corners */
+      }
+    
+      /* Styling email addresses and links inside the home page footer */
+      .home #footer-homepage .footer-email-address, 
+      #footer-homepage a {
+          font-size: 3vw; /* Scaling font size based on viewport width */
+          text-align: center; /* Center-aligning the text */
+          color: white; /* Setting the text color to white */
+          text-decoration: none; /* Removing default underlines of links */
+      }
+    
+      /* Styling the main content area on the home page */
+      .home #container-home-text {
+          display: flex; /* Using flexbox for centering and layout */
+          justify-content: center; /* Centering content horizontally */
+          align-items: center; /* Centering content vertically */
+          height: 100vh; /* Setting the container to occupy the full height of the viewport */
+          text-align: center; /* Center-aligning the text */
+      }
+    
+      /* End of CSS for home page */
+
+
+
+
+
+
+
+  
+    /* Start of CSS for about page */
+  
+/* Apply a background, font, and default color for elements within the about page */
+.about {
+  background-image: linear-gradient(to right, #000428, #004e92);  /* Applying a linear gradient background */
+  font-family: 'Poppins', sans-serif;  /* Setting the font for elements within .about */
+  color: white;  /* Default text color set to white */
+  flex-direction: column;  /* Stack children elements vertically */
+  min-height: 100vh;  /* Ensure the content takes up at least the full viewport height */
+  margin: 0;  /* Remove default margins */
+}
+
+/* Set margins, padding for the main content wrapper in the about page */
+.about #wrapper {
+  margin: 10px auto;  /* Centralize the wrapper horizontally with a margin of 10px on top and bottom */
+  padding: 5px;  /* Space around content inside the wrapper */
+}
+
+/* Define the styling for the navigation bar within the about page */
+.about .navbar {
+  font-size: 16px;  /* Text size for the navbar */
+  padding: 15px 0;  /* Padding at the top and bottom of the navbar */
+  text-align: center;  /* Center-align text in the navbar */
+}
+
+/* Style anchor elements within the navigation bar of the about page */
+.about .navbar a {
+  text-decoration: none;  /* Remove underlines from links */
+  padding: 6px 12px;  /* Space around text inside the anchor elements */
+  font-size: 3.5vw;  /* Text size scales based on the viewport width */
+  display: inline-block;  /* Make the links block-like but line them up side by side */
+  margin: 0 1vw;  /* Margin between each link, scales with viewport width */
+  background-color: black;  /* Background color for the links */
+  color: white;  /* Text color for the links */
+  border-radius: 4px;  /* Rounded corners for the links */
+}
+
+/* Style the images within the article section of the about page */
+#article-for-about img {
+  width: 100%;  /* Images take up 100% width of their container */
+  display: block;  /* Images display as block elements */
+  border-radius: 4px;  /* Rounded corners for images */
+  text-align: center;  /* Center-align images */
+}
+
+/* Style captions for images within the article section of the about page */
+#article-for-about figcaption {
+  text-align: center;  /* Center-align captions */
+  background-color: black;  /* Background color for the captions */
+  color: white;  /* Text color for the captions */
+  border-radius: 4px;  /* Rounded corners for the captions */
+  font-size: 3vw;  /* Text size scales based on the viewport width */
+  padding: 1px;  /* Padding inside captions */
+  margin: 5px;  /* Margin around captions */
+}
+
+/* Style h3 headers within the section of the about page */
+#section-for-about h3 {
+  margin: 10px;  /* Margin around headers */
+  font-size: 4.7vw;  /* Text size scales with viewport width */
+  text-decoration: underline;  /* Underline headers */
+}
+
+/* Style paragraphs within the section of the about page */
+#section-for-about p {
+  background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent black background for paragraphs */
+  border-radius: 4px;  /* Rounded corners for paragraphs */
+  font-size: 3.5vw;  /* Text size scales based on the viewport width */
+  padding: 5px;  /* Padding inside paragraphs */
+  margin: 10px;  /* Margin around paragraphs */
+}
+
+/* Style videos to occupy specific dimensions */
+#video-container video {
+  height: 50vh;  /* Height based on half of the viewport height */
+  width: 60vw;  /* Width based on 60% of the viewport width */
+}
+
+/* Define styles for the container holding the video on the about page */
+.about #video-container {
+  margin-top: 15px;  /* Space above the video container */
+  text-align: center;  /* Center-align content within the video container */
+}
+
+/* Style the h5 headers within the video container */
+#video-container h5 {
+  font-size: 3vw;  /* Text size scales based on the viewport width */
+  background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent black background for h5 headers */
+  border-radius: 4px;  /* Rounded corners for h5 headers */
+  padding: 5px;  /* Padding inside h5 headers */
+  margin-bottom: 0;  /* Remove default bottom margin from h5 headers */
+}
+
+/* Define styles for buttons inside the video container */
+#video-container button {
+  padding: 4px 10px;  /* Space inside the buttons */
+  height: 7vh;  /* Button height based on viewport height */
+  width: 40vw;  /* Button width based on viewport width */
+  font-size: 3vw;  /* Text size for buttons, scaling with viewport width */
+  border-radius: 4px;  /* Rounded corners for the buttons */
+  border: none;  /* Remove default borders from buttons */
+  margin: 4vh;  /* Margin around buttons */
+  background-color: black;  /* Background color for buttons */
+  color: white;  /* Text color for buttons */
+}
+
+/* Define styles for the active state of the button */
+.about button:active {
+  background-color: #003366;  /* Background color when button is pressed */
+  color: white;  /* Text color remains white when button is pressed */
+  border: none;  /* Ensure no borders appear on active state */
+  border-radius: 4px;  /* Rounded corners remain consistent on active state */
+}
+
+/* Style the footer within the about page */
+#footer-for-about {
+  margin-top: 2.6vw;  /* Margin above the footer */
+  text-align: center;  /* Center-align text within the footer */
+  font-size: 2.5vw;  /* Text size scales based on the viewport width */
+  background-color: black;  /* Background color for the footer */
+  border-radius: 6px;  /* Rounded corners for the footer */
+  padding: 0.5vw;  /* Space inside the footer */
+}
+
+/* Style paragraphs within the about page footer */
+#footer-for-about p {
+  font-size: 2.5vw;  /* Text size scales based on the viewport width */
+}
+
+/* Style links and email addresses within the footer of the about page */
+#footer-for-about a, .footer-email-address {
+  text-align: center;  /* Center-align the text */
+  color: white;  /* Text color for links and emails */
+  text-decoration: none;  /* Remove default underlines from links */
+}
+
+/* End of CSS for about page */
+
+  
+  
+
+
+
+
+  /* Start of CSS for the contact page */
+
+/* Styling for the general `.contact` class elements */
+.contact {
+  background-image: linear-gradient(to right, #000428, #004e92);  /* Applying a linear gradient background */
+  background-repeat: no-repeat;  /* Ensure the background does not repeat */
+  background-size: cover;  /* Make the background cover the entire container */
+  background-attachment: fixed;  /* Set the background image in place, creating a parallax-like effect */
+  font-family: 'Poppins', sans-serif;  /* Specifying a default font for this section */
+  color: white;  /* Setting the default text color to white */
+}
+
+/* Styling for the main content wrapper in the contact page */
+#contact-wrapper {
+  width: 100%;  /* Set the wrapper to occupy the entire width of its parent container */
+  padding: 4%;  /* Provide padding on all sides of the content */
+}
+
+/* Styling for the navigation section in the contact page */
+#contact-nav {
+  background: transparent;  /* Set a transparent background for the nav */
+  padding: 10px 0;  /* Provide vertical padding */
+  text-align: center;  /* Center-align the nav content horizontally */
+}
+
+/* Style the h4 header in the navigation, which seems to use a flex layout for child items */
+#contact-nav h4 {
+  display: flex;  /* Use flexbox for arranging child items */
+  justify-content: space-around;  /* Distribute child items with even space between them */
+  flex-wrap: nowrap;  /* Prevent child items from wrapping to the next line */
+}
+
+/* Styling for anchor elements within the contact navigation */
+#contact-nav a {
+  text-decoration: none;  /* Remove underlines from links */
+  font-weight: bold;  /* Make the font bold */
+  padding: 6px 8px;  /* Add padding to the link for a button-like feel */
+  font-size: 4vw;  /* Font size scales based on viewport width for responsiveness */
+  display: inline-block;  /* Make links display inline but retain block properties */
+  margin: 0 0.5vw;  /* Add horizontal margins scaled to viewport width */
+  background-color: black;  /* Set the background color for the link/buttons */
+  color: white;  /* Text color is set to white */
+  border-radius: 4px;  /* Rounded corners for the link/buttons */
+  transition: 0.3s;  /* Smooth transition for hover effects */
+  min-width: 48px;  /* Set a minimum width for touch targets */
+  text-align: center;  /* Center-align the text within the links */
+}
+
+/* Hover effect for links in the contact navigation */
+#contact-nav a:hover {
+  background-color: #003366;  /* Change the background color on hover */
+}
+
+/* Style the main header inside the contact content */
+#contact-content h1 {
+  font-size: 6vw;  /* Scale the font size based on the viewport width */
+  margin-bottom: 20px;  /* Add some space below the header */
+  text-align: center;  /* Center-align the header */
+}
+
+/* Common styles for labels, input fields, and textareas in the input group */
+.input-group label,
+.input-group input,
+.input-group textarea {
+  font-size: 3vw;  /* Font size scales based on viewport width */
+  width: 100%;  /* Make these elements span the entire width of their container */
+  box-sizing: border-box;  /* Include padding and border in the element's total width */
+}
+
+/* Center-align the content inside the button group */
+.button-group {
+  text-align: center;
+}
+
+/* Common styles for reset and submit buttons */
+.reset-button, .submit-button {
+  font-size: 2.5vw;  /* Font size scales based on viewport width */
+  margin: 5px;  /* Space around each button */
+  padding: 2vw 4vw;  /* Button padding scales with viewport width */
+  border: none;  /* Remove borders from buttons */
+  background-color: black;  /* Set button background color */
+  color: white;  /* Set button text color */
+  border-radius: 4px;  /* Rounded corners for the buttons */
+  transition: background-color 1s;  /* Smooth transition for button hover effect */
+}
+
+/* Styles for active (pressed) state of reset and submit buttons */
+.reset-button:active, 
+.submit-button:active {
+  background-color: white;  /* Background color when button is pressed */
+  color: black;  /* Text color when button is pressed */
+}
+
+/* Styles for the footer in the contact page */
+#contact-footer {
+  font-size: 3vw;  /* Font size scales based on viewport width */
+  text-align: center;  /* Center-align text within the footer */
+  padding: 1.68vw 0vw;  /* Vertical padding that scales with viewport width */
+  background-color: black;  /* Background color for the footer */
+  border-radius: 4px;  /* Rounded corners for the footer */
+  margin-top: 10px;  /* Space above the footer */
+}
+
+/* Styling for anchor elements within the contact footer */
+#contact-footer a{
+  text-decoration: none;  /* Remove underlines from links */
+  color: white;  /* Set link color to white */
+  font-size: 3vw;  /* Font size scales based on viewport width for responsiveness */
+}
+
+/* End of CSS for the contact page */
+
+/* Start of CSS for projects page */
+
+/* Styling for the general `.projects` class elements */
+.projects {
+    background-image: linear-gradient(to right, #000428, #004e92);  /* Set a linear gradient as the background */
+    background-repeat: no-repeat;  /* Ensure the background image doesn't repeat */
+    background-size: cover;  /* Make the background image cover the entire container */
+    background-attachment: fixed;  /* Fix the background image, creating a parallax effect */
+    font-family: 'Poppins', sans-serif;  /* Default font family for the projects section */
+    color: white;  /* Default text color set to white */
+}
+
+/* Style the main content wrapper in the projects page */
+.projects #projects-wrapper {
+    width: 100%;  /* Make the wrapper use the full width of its parent container */
+    padding: 5%;  /* Add padding on all sides of the content */
+}
+
+/* Style the navigation section in the projects page */
+#projects-nav {
+    padding: 5px 0;  /* Add vertical padding to the navigation */
+    text-align: center;  /* Center-align the navigation content */
+}
+
+/* Style unordered lists within the projects navigation */
+#projects-nav ul {
+    list-style-type: none;  /* Remove the default list bullets */
+    padding-left: 0;  /* Remove default padding */
+    margin: 0;  /* Remove default margin */
+    display: flex;  /* Display child elements in a flex layout */
+    justify-content: space-around;  /* Distribute child elements evenly */
+    flex-wrap: nowrap;  /* Prevent child elements from wrapping to the next line */
+}
+
+/* Styling for list items within the projects navigation */
+#projects-nav li {
+    display: inline-block;  /* Display list items side by side */
+    margin: 5px 5px;  /* Margin around each list item */
+}
+
+/* Styling for anchor elements within the projects navigation */
+.projects #projects-nav a {
+    text-decoration: none;  /* Remove underlines from links */
+    font-weight: bold;  /* Make the font bold */
+    padding: 6px 8px;  /* Padding for a button-like feel */
+    font-size: 5vw;  /* Font size scales with viewport width */
+    display: inline-block;  /* Make links display inline but keep block styling */
+    margin: 0 0.5vw;  /* Horizontal margin between links */
+    background-color: black;  /* Background color for the links/buttons */
+    color: white;  /* Text color is white */
+    border-radius: 6px;  /* Rounded corners */
+    transition: 0.3s;  /* Smooth transition for hover effects */
+}
+
+/* Styling for the main content section of the projects page */
+.projects #projects-content {
+    margin-top: 2vw;  /* Top margin for some spacing */
+}
+
+/* Styling for individual project sections */
+.projects .project-section {
+    font-size: 3vw;  /* Font size suitable for project descriptions */
+}
+
+/* Styling for GitHub links within the projects */
+.projects .github-link {
+    font-size: 3vw;  /* Font size scales with viewport width */
+    padding: 2vw 3vw;  /* Padding around the link for a button-like feel */
+    background-color: black;  /* Background color for the GitHub links */
+    color: white;  /* Text color is white */
+    text-decoration: none;  /* Remove underlines from links */
+    border-radius: 5px;  /* Rounded corners */
+    transition: background-color 0.3s ease;  /* Smooth transition effect for hover */
+    display: inline-block; 
+}
+
+/* Styling for the content sections in the project content */
+#projects-content section {
+    background-color: rgba(0, 0, 0, 0.6);  /* Semi-transparent black background */
+    padding: 3vw;  /* Padding for content inside sections */
+    border-radius: 5px;  /* Rounded corners */
+    margin: 3vw;  /* Margin around each section */
+}
+
+/* Styling for h3 header */
+.projects h3 {
+    font-size: 4vw;  /* A bit larger font size for visibility */
+}
+
+/* Styling for the footer in the projects page */
+#projects-footer {
+    background-color: black;  /* Footer's background color */
+    border-radius: 4px;  /* Rounded corners for the footer */
+    text-align: center;  /* Center-align the text within the footer */
+}
+
+/* Styling for h5 headings within the projects footer */
+.projects #projects-footer h5 {
+    font-size: 2vw;  /* Font size scales with viewport width */
+}
+
+/* Styling for email links within the projects footer */
+#projects-footer .footer-email a {
+  font-size: 2vw;  /* Font size for footer links that scales with viewport width */
+  color: white;  /* Text color set to white */
+  text-decoration: none;  /* Remove underlines from the links */
+}
+
+/* End of CSS for projects page */
+
+  } /* End of media query for tablets */
+
+ 

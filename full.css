@@ -1,0 +1,553 @@
+/* This media query ensures that the following styles are applied only on screens with a minimum width of 960 pixels. */
+@media only screen and (min-width: 960px) {
+
+  /* Global style for all elements: Sets the default font and adjusts the box-sizing model. */
+  * {
+    font-family: 'Poppins', sans-serif;  /* Sets the default font family for the page, using 'Poppins' font from Google Fonts with a fallback of sans-serif. */
+    box-sizing: border-box;  /* Adjusts the box model so that padding and borders are included in total width/height. */
+  }
+
+  /* Specifies the general styles for the body of the webpage. */
+  body {
+    background-image: linear-gradient(to right, #000428, #004e92);  /* Applies a linear gradient as the background color, transitioning from #000428 to #004e92. */
+    display: flex;  /* Enables flexbox layout model for the body. */
+    flex-direction: column;  /* Specifies the primary axis of the flex container as vertical. */
+    min-height: 100vh;  /* Guarantees the body occupies at least the full viewport height. */
+    max-width: 100%;  /* Ensures the body width doesn't exceed the viewport width. */
+    margin: 0;  /* Removes any default margin. */
+    padding: 0;  /* Removes any default padding. */
+  }
+
+
+      /* Start of CSS specific to the home page. */
+
+  /* Provides styling specific for anchor tags within the heading of the home page. */
+  .heading-for-home-page-navbar a {
+    border-radius: 4px;  /* Adds rounded corners with a 4-pixel radius to the links. */
+  }
+
+  /* Styling specifically for the navigation bar on the home page when it has a class of 'home'. */
+  .home .navbar-for-home-page {
+    background: black;  /* Sets the background color to black. */
+    text-align: center;  /* Centers the text within the element. */
+    padding: 1.5vw 0;  /* Sets vertical padding as 1.5% of the viewport width and horizontal padding to 0. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Adds a subtle shadow below the navbar. */
+  }
+
+  /* Styling specifically for anchor tags on the home page when the parent has a class of 'home'. */
+  .home a {
+    padding: 1.5vw 2vw;  /* Sets vertical padding as 1.5% of the viewport width and horizontal padding as 2%. */
+    color: white;  /* Sets the text color to white. */
+    font-size: 1.5vw;  /* Sets the font size as 1.5% of the viewport width. */
+    text-decoration: none;  /* Removes any underlines from the links. */
+    transition: background-color 0.3s;  /* Allows a smooth transition for the background color over a 0.3-second duration. */
+    margin: 0 0.5vw;  /* Sets the right and left margins to 0.5% of the viewport width. */
+  }
+
+  /* Specifies the hover effect for anchor tags on the home page when the parent has a class of 'home'. */
+  .home a:hover {
+    background: rgba(255, 255, 255, 0.1);  /* Changes the background color to a very light white with 10% opacity upon hovering. */
+  }
+
+  /* Provides styling for the footer when the body has a class of 'home'. */
+  .home footer {
+    text-align: center;  /* Centers the text within the footer. */
+    background-color: black;  /* Sets the background color to black. */
+    color: white;  /* Sets the text color to white. */
+    font-size: 2vw;  /* Sets the font size as 2% of the viewport width. */
+  }
+
+  /* Specifies the style for the greeting message on the home page. */
+  .home .greeting-home {
+    font-size: 5vw;  /* Sets the font size as 5% of the viewport width. */
+    color: white;  /* Sets the text color to white. */
+  }
+
+  /* Provides specific styling for the footer of the home page when it has an ID of 'footer-homepage'. */
+  .home #footer-homepage {
+    font-size: 1.2vw;  /* Sets the font size as 1.2% of the viewport width. */
+    width: 100%;  /* Ensures the element takes up the full width of its parent. */
+    margin: 0;  /* Removes any default margin. */
+    padding: 0;  /* Removes any default padding. */
+  }
+
+  /* Sets the font size for the email address within the footer on the home page. */
+  #footer-homepage .footer-email-address {
+    font-size: 1vw;  /* Sets the font size as 1% of the viewport width. */
+  }
+
+  /* More specific styling for footer email addresses on the home page. */
+  .home .footer-email-address, 
+  .home .footer-email-address a {
+    padding: 0;  /* Removes any padding. */
+  }
+
+  /* Provides styling for the main text container on the home page. */
+  .home #container-home-text {
+    display: flex;  /* Uses the flexbox layout. */
+    justify-content: center;  /* Horizontally centers the content. */
+    align-items: center;  /* Vertically centers the content. */
+    height: 100vh;  /* Sets the container's height to the full height of the viewport. */
+    text-align: center;  /* Centers the text within the container. */
+  }
+
+  /* End of CSS for the home page. */
+
+
+
+
+
+
+/* Start of CSS specific to the "about" page */
+
+/* General styles applied to all elements within an element with the "about" class */
+.about * {
+  margin: 0; /* Reset margin */
+  padding: 0; /* Reset padding */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+  color: white; /* Text color is set to white */
+  font-family: 'Poppins', sans-serif; /* Use the 'Poppins' font from Google Fonts with a fallback of sans-serif */
+}
+
+/* Styles for the body element when within an element with the "about" class */
+.about body {
+  background-image: linear-gradient(to right, #000428, #004e92); /* Set a linear gradient background */
+  color: white; /* Set text color to white */
+}
+
+/* Styles for an element with ID "wrapper" within an element with the "about" class */
+.about #wrapper {
+  max-width: 1100px; /* Set a maximum width */
+  margin: 20px auto; /* Vertical margins of 20px and horizontal margins auto for centering */
+  padding: 10px; /* Set padding of 10px */
+}
+
+/* Styles for elements with the "navbar" class */
+.navbar {
+  background: black; /* Set background color to black */
+  text-align: center; /* Center-align text */
+  padding: 20px 0; /* Vertical padding of 20px, no horizontal padding */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Styles for anchor tags within elements with the "navbar" class */
+.navbar a {
+  color: white; /* Text color is set to white */
+  text-decoration: none; /* Remove underlines from links */
+  margin: 0vw 2vw; /* Set horizontal margins */
+  padding: 1vw 1.5vw; /* Set vertical and horizontal padding */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition effect for background color changes */
+}
+
+/* Hover styles for anchor tags within "navbar" of the "about" page */
+.about .navbar a:hover {
+  background: rgba(255, 255, 255, 0.1); /* Set background color to a slightly transparent white on hover */
+}
+
+/* Styles for the "article" element within the "about" class */
+.about article {
+  display: flex; /* Use flexbox for layout */
+  gap: 15px; /* Space between flex items */
+  margin-top: 20px; /* Top margin */
+}
+
+/* Styles for "aside" elements within the "about" class */
+.about aside {
+  flex: 1; /* Take up 1 portion of the available space in the flex container */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Hide any overflowing content */
+}
+
+/* Styles for an element with ID "section-for-about" within the "about" class */
+.about #section-for-about {
+  flex: 2; /* Take up 2 portions of the available space in the flex container */
+}
+
+/* Styles for "figcaption" elements within the "about" class */
+.about figcaption {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background color */
+  color: white; /* Text color set to white */
+  border-radius: 4px; /* Rounded corners */
+  text-align: center; /* Center-align text */
+  padding: 5px; /* Set padding of 5px */
+  font-size: 1.5vw; /* Font size relative to the viewport width */
+}
+
+/* Styles for images within "figure" elements of the "about" page */
+.about figure img {
+  max-width: 100%; /* Ensure the image doesn't overflow its container */
+  display: block; /* Display image as a block element */
+}
+
+/* Styles for "h3" headers within the "about" class */
+.about h3 {
+  font-size: 4vw; /* Font size relative to the viewport width */
+  margin-bottom: 3vw; /* Bottom margin */
+  text-decoration: none; /* No text underline */
+  border-bottom: 0.5vw solid #004e92; /* Bottom border with a specific color */
+  display: inline-block; /* Display inline with block properties */
+  padding-bottom: 1vw; /* Bottom padding */
+}
+
+/* Styles for paragraphs within the "about" class */
+.about p {
+  margin-bottom: 2vw; /* Bottom margin */
+  font-size: 1.5vw; /* Font size relative to the viewport width */
+}
+
+/* Styles for an element with ID "video-container" */
+#video-container {
+  margin-top: 20px; /* Top margin */
+  text-align: center; /* Center-align content */
+}
+
+/* Styles for "h5" headers within the "video-container" */
+#video-container h5 {
+  font-size: 3vw; /* Font size relative to the viewport width */
+}
+
+/* Styles for the "video" element within the "video-container" */
+#video-container video {
+  height: 40vw; /* Height relative to the viewport width */
+  width: 60vw; /* Width relative to the viewport width */
+}
+
+/* Styles for buttons within the "about" class */
+.about button {
+  background-color: #004e92; /* Set the background color */
+  color: white; /* Set text color to white */
+  font-size: 1.5vw; /* Font size relative to the viewport width */
+  border: none; /* No borders */
+  padding: 0.5vw 1vw; /* Vertical and horizontal padding */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Cursor changes to a hand pointer on hover */
+  transition: 0.3s; /* Smooth transition effect for properties like background-color */
+  margin-top: 15px; /* Top margin */
+}
+
+/* Hover styles for buttons within the "about" class */
+.about button:hover {
+  background-color: #003366; /* Change background color on hover */
+}
+
+/* Styles for the footer within the "about" class */
+.about footer {
+  margin-top: 2vw; /* Top margin */
+  text-align: center; /* Center-align content */
+  padding: 2vw 0vw; /* Vertical padding and no horizontal padding */
+  background-color: #000; /* Set background color to black */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1vw; /* Font size relative to the viewport width */
+}
+
+/* Styles for anchor tags and email addresses in the footer of the "about" class */
+.about a, .about .footer-email-address {
+  color: white; /* Text color set to white */
+  transition: color 0.3s; /* Smooth transition effect for color changes */
+  text-decoration: none; /* No underlines for the links */
+  font-size: 1vw; /* Font size relative to the viewport width */
+}
+
+/* Hover styles for anchor tags within the "about" class */
+.about a:hover {
+  color: #ffffff; /* Change text color to solid white on hover */
+}
+
+/* End of CSS specific to the "about" page */
+
+
+
+
+
+
+/* Start of CSS for the "project" page */
+
+/* General styles applicable to all elements inside an element with class "projects" */
+.projects * {
+  font-family: 'Poppins', sans-serif; /* Using the Poppins font family */
+  color: white; /* Setting text color to white */
+  margin: 0; /* Resetting margins */
+  padding: 0; /* Resetting padding */
+  box-sizing: border-box; /* Making sure padding and borders do not increase element sizes */
+}
+
+/* Styling the body element of the "projects" page */
+.projects body {
+  background-image: linear-gradient(to right, #000428, #004e92); /* Applying a linear gradient background */
+}
+
+/* Styling the main wrapper for content on the "projects" page */
+.projects #projects-wrapper {
+  width: 90%; /* Taking up 90% of the viewport's width */
+  margin: 0 auto; /* Centering the wrapper horizontally */
+  padding: 3vw; /* Applying padding relative to the viewport's width */
+}
+
+/* Styling the navigation bar on the "projects" page */
+.projects #projects-nav {
+  background: black; /* Black background */
+  padding: 2vw 0; /* Padding at the top and bottom relative to the viewport's width */
+  text-align: center; /* Centering text */
+  margin-bottom: 3vw; /* Spacing below the navbar */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect below the navbar */
+}
+
+/* Removing default list styles from the navigation unordered list */
+.projects #projects-nav ul {
+  list-style-type: none; /* No bullets */
+}
+
+/* Styling the list items within the navigation bar */
+.projects #projects-nav li {
+  display: inline; /* Placing list items side by side */
+  margin: 0 2.5vw; /* Horizontal spacing between items */
+}
+
+/* Styling the anchor tags (links) within the navigation bar */
+.projects #projects-nav a {
+  color: white; /* Text color */
+  font-size: 1.5vw; /* Font size relative to viewport width */
+  font-weight: bold; /* Bold font weight */
+  text-decoration: none; /* No underlining for links */
+  transition: background-color 0.3s; /* Smooth transition for background color changes */
+  padding: 1.5vw 2vw; /* Padding around the links */
+  border-radius: 5px; /* Rounded corners for links */
+}
+
+/* Hover effect for navigation links */
+.projects #projects-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background on hover */
+}
+
+/* Styling the main content area on the "projects" page */
+#projects-content {
+  margin-top: 3vw; /* Spacing at the top */
+}
+
+/* Specific styles for paragraphs within the main content area of the "projects" page */
+.projects #projects-content p {
+  margin-top: 3vw; /* Spacing above the paragraph */
+  margin-bottom: 3vw; /* Spacing below the paragraph */
+}
+
+/* Styling each project section */
+.project-section {
+  margin-bottom: 3vw; /* Spacing below each project section */
+  padding: 2vw; /* Padding inside each project section */
+  border-radius: 5px; /* Rounded corners */
+  background-color: rgba(0, 0, 0, 0.55); /* Semi-transparent black background */
+}
+
+/* Styling for h3 headers within the main content area */
+#projects-content h3 {
+  font-size: 3vw; /* Font size relative to viewport width */
+}
+
+/* Styles for the description and usage information of each project */
+.project-description,
+.project-usage,
+.github-link {
+  margin-bottom: 3vw; /* Spacing below these elements */
+}
+
+/* Styling for the GitHub link of each project */
+.github-link {
+  color: white; /* Text color */
+  text-decoration: none; /* No underlining */
+  font-size: 1.5vw; /* Font size relative to viewport width */
+  display: inline-block; /* Allows for padding to be applied properly */
+  background-color: black; /* Black background */
+  padding: 1vw 2vw; /* Padding around the link */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 1s; /* Smooth transition for background color changes */
+}
+
+/* Hover effect for the GitHub link */
+.github-link:hover {
+  background-color: white; /* Background changes to white on hover */
+  color: black; /* Text color changes to black on hover */
+}
+
+/* Styling for the footer on the "projects" page */
+.projects #projects-footer {
+  text-align: center; /* Centered text */
+  margin-top: 2vw; /* Spacing at the top */
+  background-color: black; /* Black background */
+  padding: 3vw; /* Padding inside the footer */
+  font-size: 1vw; /* Font size relative to viewport width */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Styles for the email address link in the footer */
+.projects .footer-email a {
+  color: white; /* Text color */
+  transition: color 0.3s; /* Smooth transition for text color changes */
+  text-decoration: none; /* No underlining */
+}
+
+/* Hover effect for the email link in the footer */
+.projects .footer-email a:hover {
+  color: #ffffff; /* Maintains the same white color on hover */
+}
+
+/* End of CSS for the "project" page */
+
+
+
+
+
+
+/* Start of CSS for the "contact" page */
+
+/* Apply styles to all elements inside a container with a class "contact" */
+.contact * {
+  margin: 0; /* Resetting margins */
+  padding: 0; /* Resetting padding */
+  box-sizing: border-box; /* Setting all elements to consider border in their dimensions */
+  font-family: 'Poppins', sans-serif; /* Using the Poppins font family */
+}
+
+/* Styling the body for the contact page */
+.contact body {
+  background-image: linear-gradient(to right, #000428, #004e92); /* Adding a linear gradient as the background */
+}
+
+/* Styling the main wrapper for the contact page */
+.contact #contact-wrapper {
+  width: 90%; /* Setting the width to 90% of the container */
+  margin: 0 auto; /* Centering the wrapper horizontally */
+  padding: 3vw; /* Setting padding relative to viewport width */
+}
+
+/* Styling the navigation on the contact page */
+.contact #contact-nav {
+  background: black; /* Setting background color to black */
+  text-align: center;  /* Centering text */
+  padding: 2vw 0;    /* Adding padding to the top and bottom */
+  border-radius: 5px;  /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
+}
+
+/* Styling the links within the navigation */
+.contact #contact-nav a {
+  color: white; /* Text color set to white */
+  text-decoration: none; /* No underlining for links */
+  margin: 0vw 2vw; /* Space around the links */
+  font-size: 1.3vw; /* Font size relative to viewport width */
+  padding: 1.5vw 2vw; /* Padding around the text of the link */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for background color changes */
+}
+
+/* Hover effect for the navigation links */
+.contact #contact-nav a:hover {
+  background: rgba(255, 255, 255, 0.1); /* Slight shade on hover */
+}
+
+/* Styling the content section for the contact page */
+#contact-content {
+  text-align: center; /* Center aligning text */
+  margin-top: 2.5vw; /* Margin at the top */
+}
+
+/* Styling the primary header within the contact page */
+.contact h1 {
+  color: white; /* Text color set to white */
+  margin-bottom: 3vw; /* Space below the header */
+  font-size: 3vw; /* Font size relative to viewport width */
+}
+
+/* Styling the placeholders for input fields and textareas */
+.contact .input-group input::placeholder, 
+.contact .input-group textarea::placeholder {
+  font-size: 1.5vw; /* Adjusting the font size of the placeholder text */
+}
+
+/* Styling each group of input fields */
+.input-group {
+  margin-bottom: 2vw; /* Spacing below each input group */
+  font-size: 2vw; /* Font size relative to viewport width */
+  color: white; /* Text color set to white */
+}
+
+/* Styling the labels within the input groups */
+.input-group label {
+  display: block; /* Displaying label as block element */
+  margin-bottom: 2vw; /* Space below each label */
+}
+
+/* Styling input fields and textareas within input groups */
+.contact .input-group input,
+.input-group textarea {
+  width: 100%; /* Full width */
+  padding: 1.5vw; /* Padding inside input/textarea */
+  border: 2px solid #004e92; /* Border styling */
+  border-radius: 5px; /* Rounded corners */
+  color: #333; /* Text color for input/textarea */
+}
+
+/* Styling the group of buttons */
+.button-group {
+  margin-top: 3vw; /* Space above the button group */
+}
+
+/* Styling the reset and submit buttons */
+.reset-button,
+.submit-button {
+  background-color: black; /* Background color set to black */
+  color: white; /* Text color set to white */
+  border: none; /* No border */
+  padding: 1.5vw 2vw; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.5vw; /* Font size relative to viewport width */
+  cursor: pointer; /* Pointer cursor when hovered */
+  transition: background-color 1s; /* Smooth transition for background color changes */
+  margin-right: 1.5vw; /* Space to the right */
+}
+
+/* Hover effect for the reset and submit buttons */
+.contact .reset-button:hover,
+.submit-button:hover {
+  background-color: white; /* Changing background color to white on hover */
+  color: black; /* Changing text color to black on hover */
+}
+
+/* Styling the footer on the contact page */
+.contact #contact-footer {
+  text-align: center; /* Centered text */
+  margin-top: 40px; /* Fixed margin at the top */
+  padding: 20px 0; /* Padding at the top and bottom */
+  background-color: black; /* Background color set to black */
+  border-radius: 5px; /* Rounded corners */
+  color: white; /* Text color set to white */
+}
+
+/* Styling email address within the footer */
+.footer-email-address {
+  font-size: 1.5vw; /* Font size relative to viewport width */
+  color: white; /* Text color set to white */
+}
+
+/* Styling the email link within the email address */
+.footer-email-address a {
+  color: white; /* Text color set to white */
+  text-decoration: none; /* No underlining for links */
+  transition: color 0.3s; /* Smooth transition for text color changes */
+}
+
+/* Hover effect for the email link */
+.contact .footer-email-address a:hover {
+  color: #ffffff; /* Maintains the same white color on hover */
+}
+
+/* End of CSS for the "contact" page */
+
+} /* Closing the media query block that ensures these styles only apply for viewports with a width of at least 960px */
+
+
+
+
+

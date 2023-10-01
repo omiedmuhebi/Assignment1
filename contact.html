@@ -1,0 +1,68 @@
+<!doctype html>  <!-- Declares the document to be HTML5 -->
+<html lang="en">  <!-- Start of the HTML document -->
+
+<head>  <!-- Start of the head section which contains meta data and links -->
+    <meta charset="UTF-8">  <!-- Specifies the character encoding for the document -->
+    <title> Omied's Website </title>  <!-- Sets the title that appears in the browser tab -->
+    <meta name="viewport" content="width=device-width">  <!-- Ensures the site is optimized for mobile devices and scales properly -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">  <!-- Imports the Poppins font from Google Fonts with various weights -->
+    <link href="full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">  <!-- Links to CSS for screens wider than 960px -->
+    <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959px)">  <!-- Links to CSS for tablet-sized screens -->
+    <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">  <!-- Links to CSS for phone-sized screens -->
+</head>  <!-- End of the head section -->
+
+<body class="contact">  <!-- Start of the body section with a class named "contact" -->
+    <div id="contact-wrapper">  <!-- A wrapper div for the contact page content -->
+
+        <nav id="contact-nav">  <!-- Navigation bar for the page -->
+            <h4>  <!-- Heading for the navigation links -->
+                <!-- Navigation links for different sections of the website -->
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html">Contact</a>
+            </h4>
+        </nav>
+
+        <section id="contact-content">  <!-- Section for the contact content -->
+            <h1>Send me your questions and project ideas</h1>  <!-- Main heading for this section -->
+            <!-- Form to send an email to me -->
+            <form action="mailto:omied.muhebi@ontariotechu.net" method="post" enctype="text/plain">
+
+                <div class="input-group">  <!-- Group for the name input -->
+                    <label for="name">Name</label>  <!-- Label for the name input -->
+                    <input type="text" id="name" name="name" placeholder="Enter full name here" size="80" required>  <!-- Text input for the user's name -->
+                </div>
+
+                <div class="input-group">  <!-- Group for the email input -->
+                    <label for="email">Email</label>  <!-- Label for the email input -->
+                    <input type="email" id="email" name="email" placeholder="Enter your email address here" size="80" required>  <!-- Email input for the user's email address -->
+                </div>
+
+                <div class="input-group">  <!-- Group for the message input -->
+                    <label for="message">Message</label>  <!-- Label for the message input -->
+                    <textarea id="message" name="comments" placeholder="Enter your message here" cols="80" rows="8"></textarea>  <!-- Textarea for the user's message -->
+                </div>
+
+                <div class="button-group">  <!-- Group for the form buttons -->
+                    <input class="reset-button" type="reset" value="Reset">  <!-- Button to reset the form -->
+                    <input class="submit-button" type="submit" value="Submit">  <!-- Button to submit the form -->
+                </div>
+            </form>
+        </section>
+
+        <footer id="contact-footer">  <!-- Footer section for the page -->
+            <h5>&#169; 2023 omied Muhebi <br> All Rights Reserved</h5>  <!-- Copyright notice for the page -->
+            <address>  <!-- Address section for contact details -->
+                <p class="footer-email-address">
+                    <!-- Link to my email address -->
+                    Contact me at <a href="omied.muhebi@ontariotechu.net">omied.muhebi@ontariotechu.net</a>
+                </p>
+            </address>
+        </footer>
+    </div>  <!-- End of the contact-wrapper div -->
+</body>  <!-- End of the body section -->
+
+</html>  <!-- End of the HTML document -->

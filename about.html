@@ -1,0 +1,108 @@
+<!doctype html>  <!-- Document type declaration for HTML5 -->
+<html lang="en">  <!-- Start of the HTML document -->
+
+<head>  <!-- Head section containing meta information and links -->
+  <meta charset="UTF-8">  <!-- Specifies the character encoding for the document -->
+  <link href="../CSS/about.css" rel="stylesheet" type="text/css">  <!-- Link to the stylesheet for the "about" page -->
+  <title> About me </title>  <!-- The title that appears in the browser tab -->
+  <meta name="viewport" content="width=device-width">  <!-- Ensures the site is optimized for mobile devices and scales properly -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">  <!-- Imports the Poppins font from Google Fonts with various weights -->
+  <link href="full.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">  <!-- Links to CSS for screens wider than 960px -->
+  <link href="tablet.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:959px)">  <!-- Links to CSS for tablet-sized screens -->
+  <link href="phone.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">  <!-- Links to CSS for phone-sized screens -->
+</head>  <!-- End of head section -->
+
+<body class="about">  <!-- Start of the body section with a class named "about" -->
+  <div id="wrapper">  <!-- A wrapper div -->
+
+      <nav class="navbar">  <!-- Navigation bar for the page -->
+          <h4 class="heading-for-about-page">  <!-- Heading for the navigation links -->
+            <!-- Navigation links for various sections of the website -->
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+          </h4>
+      </nav>
+
+    <article id="article-for-about">  <!-- Article for the main content about me -->
+      <aside class="aside-for-about">  <!-- Sidebar content -->
+        <figure class="figure-for-about">  <!-- Container for image and its caption -->
+          <!-- Image depicting the me with a sunset in the background -->
+          <img src="20220703_204923.jpg" alt="Me with a sunset in the background">
+          <figcaption>  <!-- Caption for the image -->
+            <h5>Photo of me with a beautiful sunset</h5>
+          </figcaption>
+        </figure>
+      </aside>
+
+      <section id="section-for-about">  <!-- Main section containing details about me -->
+        <h3>A little about me</h3>  <!-- Main heading for this section -->
+        <!-- Paragraphs detailing about me -->
+        <p class="about-me-paragraph1">
+          Hi there! I'm Omied, and I'm a second-year student at Ontario Tech University, 
+          where I'm studying Technology Management. I really love learning about technology 
+          and how it can change things for the better.
+        </p>
+
+        <p class="about-me-paragraph2">
+          When it comes to technology, I'm always curious. I like to keep up with the latest 
+          tech trends and gadgets. I believe that technology can make the world a better place, 
+          but we have to use it responsibly and do good things with it.
+        </p>
+
+        <p class="about-me-paragraph3">
+          As I keep learning and growing, I hope to use my tech knowledge to make the world more 
+          innovative and better for everyone. Thanks for checking out my website, and I'd love to 
+          connect with others who are passionate about tech and making a positive impact!
+        </p>
+      </section>
+    </article>
+
+    <div id="video-container">  <!-- Container for the video content -->
+      <figure class="video-figure">  <!-- Figure container for video and its caption -->
+        <figcaption class="video-caption">  <!-- Caption for the video -->
+          <h5>Short video about me</h5>
+        </figcaption>
+        <!-- Video content with controls for playback -->
+        <video id="video" width="390" height="217" controls>
+          <!-- Sources for the video for compatibility with different browsers -->
+          <source src="aboutme2.mp4" type="video/mp4">
+          <source src="Aboutme3.ogv" type="video/ogv">
+          <!-- Fallback message for browsers that don't support the video tag -->
+          Your browser doesn't support the video tag.
+        </video>
+        <br>  <!-- Line break -->
+        <button onclick="playPause()">Play or pause the video</button>  <!-- Button to play or pause the video -->
+
+        <!-- Inline JavaScript to toggle play and pause for the video -->
+        <script>
+          var myVideo = document.getElementById("video");
+
+          function playPause() {
+            if (myVideo.paused) {
+              myVideo.play();
+            } else {
+              myVideo.pause();
+            }
+          }
+        </script>        
+      </figure>
+    </div>
+
+    <footer id="footer-for-about">  <!-- Footer section of the page -->
+      <!-- Copyright information and the year -->
+      <h5>&#169; 2023 omied Muhebi <br> All Rights Reserved</h5>
+      <address>  <!-- Contact details section -->
+        <p class="footer-email-address">
+          <!-- Contact email address for the user -->
+          Contact me at <a href="omied.muhebi@ontariotechu.net">omied.muhebi@ontariotechu.net</a>
+        </p>
+      </address>
+    </footer>
+  </div>  <!-- End of the wrapper div -->
+</body>  <!-- End of the body section -->
+
+</html>  <!-- End of the HTML document -->
